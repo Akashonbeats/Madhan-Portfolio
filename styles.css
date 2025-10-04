@@ -14,7 +14,6 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   padding-inline: 70px;
-  padding-bottom: 90px;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 a {
@@ -246,7 +245,9 @@ footer {
   padding-left: 200px;
   padding-top: 50px;
   background-color: #151517;
-  border-radius: 50px;
+  padding-bottom: 80px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 .linkswrap {
   display: flex;
@@ -274,7 +275,7 @@ footer {
 .finalwords {
   font-size: 0.8rem;
   font-weight: 200;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: #9099ba;
 }
