@@ -19,7 +19,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: none;
+  cursor: pointer;
 }
 body.dark-theme {
   --bg-color: var(--bg-color-dark);
@@ -35,6 +35,8 @@ body.dark-theme {
   --card-bg-color-dark: #2a2a2a;
   --text-color: #333333;
   --text-color-dark: #e0e0e0;
+  --text-hover-color: #63687b;
+  --text-hover-color-dark: #b0b3c6;
   --accent-color: #ff0051;
   --border-color: #e0e0e0;
   --border-color-dark: #404040;
@@ -261,21 +263,22 @@ footer {
 .socials h1 {
   font-size: 2.5rem;
   font-weight: 100;
+  color: var(--accent-color);
 }
 .socials a {
   display: block;
   padding-top: 10px;
   font-size: 1.5rem;
   font-weight: 100;
-  color: #9099ba;
+  color: var(--text-color);
 }
 .socials a:hover {
-  color: #63687b;
+  color: var(--text-hover-color-dark);
 }
 .finalwords {
   font-size: 0.8rem;
   font-weight: 200;
   margin-bottom: 30px;
   text-align: center;
-  color: #9099ba;
+  color: var(--text-color);
 }
