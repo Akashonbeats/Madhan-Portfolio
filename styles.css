@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 html {
   scroll-behavior: smooth;
@@ -13,9 +14,14 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   padding-inline: 70px;
+  padding-bottom: 90px;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: none;
+}
 body.dark-theme {
   --bg-color: var(--bg-color-dark);
   --card-bg-color: var(--card-bg-color-dark);
@@ -229,4 +235,46 @@ body.dark-theme #socials div img {
 }
 .instagram-media {
   height: 728px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in the element's total width */
+  gap: 80px;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 50px;
+  background-color: #151517;
+  border-radius: 50px;
+}
+.linkswrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+.socials h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+.socials a {
+  display: block;
+  padding-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #9099ba;
+}
+.socials a:hover {
+  color: #63687b;
+}
+.finalwords {
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #9099ba;
 }
